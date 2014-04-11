@@ -1,0 +1,22 @@
+{
+    "name" : "orlissenberg/laravel-zendserver-pushqueue",
+    "description" : "Push queue implementation for Laravel 4 with the Zend Server Job Queue.",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "O. R. Lissenberg",
+            "email" : "olissenberg@gmail.com"
+        }
+    ],
+    "require" : {
+        "illuminate/queue" : "4.1.*@dev",
+        "phpspec/phpspec" : "2.*",
+        "phpunit/phpunit" : "3.7.*",
+        "jeremeamia/superclosure": "~1.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Orlissenberg\\" : "src/Orlissenberg"
+        }
+    }
+}
