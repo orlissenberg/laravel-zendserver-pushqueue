@@ -1,6 +1,8 @@
-##Zend Server 6 Job Queue
+#Laravel 4 - Zend Server (>= 6.1) Push Queue
 
-[Documentation](http://files.zend.com/help/Zend-Server-6/content/jobs_component.htm)
+[![Build Status](https://travis-ci.org/orlissenberg/laravel-zendserver-pushqueue.svg?branch=master)](https://travis-ci.org/orlissenberg/laravel-zendserver-pushqueue)
+
+[Zend Server Job Queue Documentation](http://files.zend.com/help/Zend-Server-6/content/jobs_component.htm)
 
 Add the Service Provider to your config/app.php
 
@@ -14,16 +16,15 @@ Add configuration to the config/queue.php
         'callback-url' => '/queue/zendserver',
     ],
 
-Should work just like Iron IO push queues from that point on, note that it only works with
-paid versions of Zend Server.
+Should work just like Iron IO push queues from that point on, note that it only works with commercial versions of Zend Server.
 
 Notes and ToDo's
 
 - Don't use large payloads, performance will suffer (see documentation).
 - Zend Server 6.3 has https support, we had issues with earlier versions.
 - The timed/delayed jobs are not implemented yet.
-- Probably 75% copied/reused from IronQueue ...
-- ToDo: Tests!
+- Probably 75% copied/reused from IronQueue.
+- ToDo: More tests/coverage!
 
-MIT License, enjoy.
+MIT License, enjoy!
 
