@@ -2,17 +2,33 @@
     "name" : "orlissenberg/laravel-zendserver-pushqueue",
     "description" : "Push queue implementation for Laravel 4 with the Zend Server Job Queue.",
     "license" : "MIT",
+    "keywords" : [
+        "zendserver",
+        "laravel4",
+        "larvel",
+        "queue",
+        "job",
+        "pushqueue",
+        "ironmq"
+    ],
+    "homepage" : "https://github.com/orlissenberg/laravel-zendserver-pushqueue",
     "authors" : [
         {
             "name" : "O. R. Lissenberg",
             "email" : "olissenberg@gmail.com"
         }
     ],
+    "support" : {
+        "issues" : "https://github.com/orlissenberg/laravel-zendserver-pushqueue/issues"
+    },
     "require" : {
         "illuminate/queue" : "4.1.*@dev",
+        "jeremeamia/superclosure" : "~1.0"
+    },
+    "require-dev" : {
         "phpspec/phpspec" : "2.*",
         "phpunit/phpunit" : "3.7.*",
-        "jeremeamia/superclosure": "~1.0"
+        "mockery/mockery": "0.9.*"
     },
     "autoload" : {
         "psr-4" : {
